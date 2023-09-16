@@ -7,9 +7,9 @@ Go to browser & search --> mongodb server download --> Select version and platfo
 After that install it.
 
 
-For Starting MongoDB:
-1.go to terminal type mongod -> now the terminal is connected to server
-2.go to another tab of the terminal type mongo -> to connect to mongo shell
+For Starting MongoDB:</br>
+1.go to terminal type mongod -> now the terminal is connected to server</br>
+2.go to another tab of the terminal type mongo -> to connect to mongo shell</br>
 
 If MongoDB version is above 5 then mongo command will not run.We have to download mongo shell seperately. 
 
