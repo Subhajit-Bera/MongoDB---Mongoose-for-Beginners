@@ -15,7 +15,6 @@ For Starting MongoDB:</br>
 
 If MongoDB version is above 5 then mongo command will not run.We have to download mongo shell seperately. 
 
-
 * mongod -> server
 * mongo -> mongo cell
 * mongodb compass ->GUI
@@ -32,3 +31,16 @@ If MongoDB version is above 5 then mongo command will not run.We have to downloa
 **Let's consider that we are building an e-commerce website with a MongoDB database named 'Ecommerce.' Inside this database, we have different collections: 'Admin' for administrators, 'User' for users, and 'Product' for all the products. Each of these collections can have multiple documents. Administrators can have multiple documents, users can have multiple documents, and products can also have multiple documents.**
 
 ![image](https://github.com/Subhajit-Bera/MongoDB---Mongoose-for-Beginners/assets/103336107/38136d1a-54a8-4213-965c-919d43e3b259)
+
+## **How does a collection differ from a table?**
+
+* Instead of tables, a MongoDB database stores its data in [collections](https://www.mongodb.com/docs/manual/reference/glossary/#std-term-collection). 
+* A collection holds one or more [BSON documents](https://www.mongodb.com/docs/manual/core/document/#std-label-bson-document-format). 
+* Documents are analogous to records or rows in a relational database table. 
+* Each document has [one or more fields](https://www.mongodb.com/docs/manual/core/document/#std-label-document-structure); fields are similar to the columns in a relational database table.
+
+## Getting started with MongoDB 
+### **For Showing Databases :** show dbs 
+![image](https://github.com/Subhajit-Bera/MongoDB---Mongoose-for-Beginners/assets/103336107/a6c749e3-8695-4e13-aa79-392771615d61)
+
+These are the databases that already exist in the system.
