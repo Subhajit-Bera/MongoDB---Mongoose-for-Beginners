@@ -54,3 +54,16 @@ use newDB
 * We can switch database using **use databae_name** keyword.
 * **But if a database does not exist in that case MongoDB creates a new database with the given name.**
 
+### Viewing the Current Database: run the command db
+```
+db
+```
+
+#### Now if we run : 
+```
+show dbs
+```
+![image](https://github.com/Subhajit-Bera/MongoDB---Mongoose-for-Beginners/assets/103336107/e0e500b1-089e-46e4-96d6-a8dec4ffc721)</br>
+####  Still, it isn't showing the newly created database which is newDB :It is beacuse :
+**In MongoDB, a database may not appear in the list of databases until there is some data (i.e., documents) inserted into it or a collection is explicitly created within it. MongoDB follows a **lazy** approach to database creation, meaning that a database isn't created physically until there's some data to store.**
+
