@@ -67,10 +67,10 @@ show dbs
 ####  Still, it isn't showing the newly created database which is newDB :It is beacuse :
 **In MongoDB, a database may not appear in the list of databases until there is some data (i.e., documents) inserted into it or a collection is explicitly created within it. MongoDB follows a **lazy** approach to database creation, meaning that a database isn't created physically until there's some data to store.**
 
+
+## Collections: 
+**Collections in MonogoDB is kind of similar to tables int the SQL world.A collection can contain multiple documents and a document is simply just a single data record.**
 ### Create Collection in Database and Insert Single Document or Data record: db.collection_name.insertOne({})
-
-#### COLLECTIONS: Collections in MonogoDB is kind of similar to tables int the SQL world.A collection can contain multiple documents and a document is simply just a single data record.
-
 Let's create a collection named students inside and insert a documen/record:
 ```
 db.students.insertOne({name : " Subhan , role : "Developer"} )
@@ -84,4 +84,8 @@ db.students.insertOne({name : " Subhan , role : "Developer"} )
 * acknowledge : true -> operation is done  successfully
 * We also get an object id associated with the document.
 
+### To show a list of collections : 
+```
+show collections
+```
 
