@@ -45,7 +45,7 @@ If MongoDB version is above 5 then mongo command will not run.We have to downloa
 
 These are the databases that already exist in the system.
 
-### Create a database : use datatbase_name 
+###  Create a database : use datatbase_name 
 ```
 use newDB
 ```
@@ -66,4 +66,22 @@ show dbs
 ![image](https://github.com/Subhajit-Bera/MongoDB---Mongoose-for-Beginners/assets/103336107/e0e500b1-089e-46e4-96d6-a8dec4ffc721)</br>
 ####  Still, it isn't showing the newly created database which is newDB :It is beacuse :
 **In MongoDB, a database may not appear in the list of databases until there is some data (i.e., documents) inserted into it or a collection is explicitly created within it. MongoDB follows a **lazy** approach to database creation, meaning that a database isn't created physically until there's some data to store.**
+
+### Create Collection in Database and Insert Single Document or Data record: db.collection_name.insertOne({})
+
+#### COLLECTIONS: Collections in MonogoDB is kind of similar to tables int the SQL world.A collection can contain multiple documents and a document is simply just a single data record.
+
+Let's create a collection named students inside and insert a documen/record:
+```
+db.students.insertOne({name : " Subhan , role : "Developer"} )
+```
+![image](https://github.com/Subhajit-Bera/MongoDB---Mongoose-for-Beginners/assets/103336107/2fb736f2-2a96-42bf-a4bc-fe9116ad31ff)
+
+**If a collection does not exist, MongoDB creates the collection when data is inserted into the collection for the first time.**
+
+* Here db.strudents.insertOne({}) method creates the collection named *students* if it does not already exist.
+* We will pass an object inside insertOne({}), and that object will contain fields and their corresponding values for the document or record.
+* acknowledge : true -> operation is done  successfully
+* We also get an object id associated with the document.
+
 
